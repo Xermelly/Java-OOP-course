@@ -1,0 +1,32 @@
+package entities;
+
+public class Student {
+	
+	public String name;
+	public double notaA;
+	public double notaB;
+	public double notaC;
+	public String check;
+	
+	public double media() {
+		return notaA + notaB + notaC;
+	}
+	
+	public void passOrFailed() {
+		if(media() > 60) {
+			check = "PASS";
+		} else {
+			check = "FAILED\n"
+					+ "MISSING: "
+					+ (60 - media())
+					+ " POINTS";
+		}
+	}
+	
+	public String toString() {
+		return "FINAL GRADE = "
+				+String.format("%.2f%n", media())
+				+ check;
+	}
+
+}

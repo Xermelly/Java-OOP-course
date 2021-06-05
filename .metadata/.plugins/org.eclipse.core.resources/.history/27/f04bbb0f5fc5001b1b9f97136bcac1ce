@@ -1,0 +1,26 @@
+package entities;
+
+public class Student {
+	
+	public String name;
+	public double notaA;
+	public double notaB;
+	public double notaC;
+	public String check;
+	
+	public double media() {
+		return notaA + notaB + notaC;
+	}
+	
+	public double passOrFailed() {
+		if(media() > 60) {
+			check = "PASS";
+		} else {
+			check = "FAILED%n"
+					+ "MISSING: "
+					+ (media() - 60)
+					+ "POINTS";
+		}
+	}
+
+}

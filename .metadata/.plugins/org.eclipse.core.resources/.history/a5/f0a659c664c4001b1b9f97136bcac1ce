@@ -1,0 +1,22 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double valorpi = 3.14159, area, raio;
+		
+		System.out.println("Digite o valor do raio do circulo:");
+		raio = sc.nextDouble();
+		
+		area = valorpi * Math.pow(raio,2);
+		System.out.printf("O valor da area do circulo é: %f", area);
+		
+		sc.close();
+	}
+}

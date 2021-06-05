@@ -1,0 +1,10 @@
+package entities;
+
+public class AccountBank {
+	
+	private static final double TAX = 5.0;
+	private int accNumber;
+	private String name;
+	private double balance;
+
+}
