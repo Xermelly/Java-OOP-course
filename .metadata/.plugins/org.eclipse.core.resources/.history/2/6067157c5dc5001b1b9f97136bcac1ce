@@ -1,8 +1,0 @@
-package entities;
-
-public class Student {
-	public double notaA;
-	public double notaB;
-	public double notaC;
-
-}
