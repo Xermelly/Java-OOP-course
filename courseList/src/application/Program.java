@@ -52,7 +52,7 @@ public class Program {
 			System.out.println(x);
 		}
 		System.out.println("---------------");
-		/*Converte a list em stream, utiliza o filter pra encontar o primeiro item que se inicia por A, e retorna null caso nao encontre nada*/
+		/*Converte a list em stream, utiliza o filter pra encontrar o primeiro item que se inicia por A, e retorna null caso nao encontre nada*/
 		String name = list.stream().filter(x -> x.charAt(0) == 'A').findFirst().orElse(null);
 		System.out.println(name);
 		
