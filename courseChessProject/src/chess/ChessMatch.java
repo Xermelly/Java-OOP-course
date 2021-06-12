@@ -8,7 +8,6 @@ import chess.pieces.Rook;
 public class ChessMatch {
 
 	private Board board;
-	private Integer turn;
 	
 	public ChessMatch() {
 		board = new Board(8, 8);
